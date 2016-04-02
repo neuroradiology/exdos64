@@ -23,7 +23,13 @@ Running ExDOS
 =============
 ExDOS runs in Bochs, QEMU, VirtualBox, VMware and some real hardware. In Bochs, performance is low. Use disk.img as a hard disk image, with CHS values 71/16/63. In QEMU, VirtualBox and VMware, be sure to use the disk image with ATA and not SATA, as the AHCI driver is not yet functional.
 
+Source code organization
+========================
+The source code is somewhat commented, and is mostly obvious. The /boot directory contains the source code of the boot loader. The /os directory contains the kernel and core OS code. The /ex86 directory contains the source of Ex86, an x86 emulator I am currently working on to replace v8086 in long mode. The /out directory contains the built kernel and boot loader binaries.
+
 Contact
 =======
 You can contact me at omarx024@gmail.com.
+
+
 
