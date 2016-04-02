@@ -17,6 +17,7 @@ dd if=tmp_out/mbr.sys conv=notrunc bs=512 count=1 of=disk.img
 dd if=tmp_out/boot_hdd.sys conv=notrunc bs=512 seek=63 of=disk.img
 dd if=tmp_out/root.sys conv=notrunc bs=512 seek=64 of=disk.img
 dd if=tmp_out/kernel64.sys conv=notrunc bs=512 seek=200 of=disk.img
+dd if=wallpaper2.bmp conv=notrunc bs=512 seek=8000 of=disk.img
 
 # Clean up directory
 rm tmp_out/*
