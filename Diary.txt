@@ -1,0 +1,39 @@
+11 December, 2015		ExDOS32 is mostly inactive and I start designing a new 64-bit version, with experience from ExDOS32.
+13 December, 2015		Bootloader and base kernel
+16 December, 2015		Long mode working
+17 December, 2015		Interrupts working -- taking a break because exams
+1 January, 2016			Basic ACPI table functions
+6 January, 2016			SMP working, up to 16 CPUs boot fine
+7 January, 2016			I/O APIC working, interprocessor IRQs working
+9 January, 2016			Barebones PS/2 keyboard driver
+12 January, 2016		Physical memory manager, manages up to 16 GB of physical RAM, SSE memcpy
+13 January, 2016		Virtual memory manager, manages up to 16 GB of virtual memory
+15 January, 2016		PCI scanner
+17 January, 2016		Driver interface in userspace
+18 January, 2016		ATA read/write driver (buggy, hangs sometimes in Virtualbox)
+20 January, 2016		VESA 2.0 framebuffer driver
+24 January, 2016		Graphics library for 32-bit and 24-bit VESA modes, with SSE double buffering
+25 January, 2016		AVX acceleration for memcpy and graphics, performance improvement in Bochs
+28 January, 2016		ACPI shutdown and reset
+30 January, 2016		File I/O abstraction layer, read-only ExDFS filesystem driver
+1 February, 2016		BMP file parser, PS/2 mouse driver
+4 February, 2016		Barebones windowing system
+7 February, 2016		Site is released, window system demo is available for download
+9 February, 2016		Rewrote windowing system, major performance improvements
+11 February, 2016		Windowing system bugfixes
+13 February, 2016		Broken MTRR implementation
+17 February, 2016		Alpha blending improvements
+18 February, 2016		Major bugfix and performance improvement in mouse driver
+20 February, 2016		Performance improvements in ATA driver
+21 February, 2016		Added 16-bit VESA support to the display library (very slow, only used as a fallback)
+22 February, 2016		Stub ACPI AML interpreter
+23 February, 2016		MTRR implementation, write-combining for framebuffer
+24 February, 2016		PCI Express memory-mapped scanner
+26 February, 2016		Fixed a bug in ATA driver, now doesn't hang on VirtualBox
+3 March, 2016			Added legacy PIC support to be used when I/O APIC is not present
+13 March, 2016			Made a boot screen
+17 March, 2016			Fixed bugs in ATA driver; now runs on real SATA hardware under IDE emulation
+19 March, 2016			Added support for drawing into the window canvas
+1 April, 2016			16-bit framebuffer performance improvements
+
+
